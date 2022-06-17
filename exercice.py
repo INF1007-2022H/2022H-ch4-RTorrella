@@ -2,24 +2,36 @@
 # -*- coding: utf-8 -*-
 
 
+import re
+
+
 def is_even_len(string: str) -> bool:
-    pass
+    taille = len(string) % 2 == 0
+    if taille: 
+        return True
+    else:
+        return False
 
 
 def remove_third_char(string: str) -> str:
-    pass
+
+    return string.replace(string[2], "")
 
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
-    pass
+
+    return string.replace(old_char, new_char)
 
 
 def get_number_of_char(string: str, char: str) -> int:
-    pass
+
+    return string.count(char)
+
 
 
 def get_number_of_words(sentence: str, word: str) -> int:
-    pass
+
+    return sentence.count(word)
 
 
 def main() -> None:
